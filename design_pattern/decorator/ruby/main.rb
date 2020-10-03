@@ -62,8 +62,6 @@ class MultiStringDisplay < Display
 end
 
 class Border < Display
-  attr_accessor :display
-
   def initialize(display)
     @display = display
   end

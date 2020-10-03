@@ -22,8 +22,6 @@ class AbstractDisplay
 end
 
 class CharDisplay < AbstractDisplay
-  attr_accessor :string
-
   def initialize(string)
     @string = string
   end
@@ -42,8 +40,6 @@ class CharDisplay < AbstractDisplay
 end
 
 class StringDisplay < AbstractDisplay
-  attr_accessor :string, :witch
-
   def initialize(string)
     @string = string
     @witch = @string.bytes.length
